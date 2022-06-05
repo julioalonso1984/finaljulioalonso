@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="consultas para defensa animal">
+    <meta name="keywords" content="consulta, dudas, defensa animal">
+    <meta name="language" content="spanish">
+    <meta name="city" content="mendoza">
+    <meta name="country" content="argentina">
+    <meta name="doc-type" content="web page">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../estilos.css">
+
+    <title>Consultas</title>
+</head>
+
+<body>
+
+    <!-- navbar inicio -->
+    <div class="container-fluid encabezado">
+        <div class="row">
+            <div class="col-1 logo"></div>
+            <nav class="navbar col-11 navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <h1 class="consulta">Consultas</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/denunciar.html">¿Cómo hacer una denuncia?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/galeria.html">Galería de animales libres</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/integrantes.html">Integrantes de la Asociación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/legislacion.html">Leyes en defensa de animales</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- navbar fin -->
+    <!-- Formulario -->
+    <div class="consultas"></div>
+    <section class="consultasSub">
+        <h2>Cualquier duda que tengas al presenciar un maltrato animal y como proceder, no dudes en consultar con
+            nosotros</h2>
+        <form  action="https://formspree.io/f/xayvvrpr" method="POST">
+            <br>
+            <div class="formulario">
+                <legend>Complete con sus datos</legend>
+                <br>
+                <label for="">nombre</label>
+                
+                <br>
+                <input class="nombre" type="text" style="background-color:transparent;" placeholder="escribe tu nombre"
+                    required>
+                <br>
+                <br>
+                <label for="">apellido</label>
+                <br>
+                <input type="text" style="background-color:transparent;" placeholder="escribe tu apellido"><br>
+                <br>
+                <p>ingresa tu genero</p>
+                <input class="genero" name="sexo" type="radio">
+                <label for="">hombre</label>
+                <br>
+                <input class="genero" name="sexo" type="radio">
+                <label for="">mujer</label>
+                <br>
+                <input class="genero" name="sexo" type="radio">
+                <label for="">indefinido</label>
+                <br>
+                <br>
+                <label for="">fecha de nacimiento</label>
+                <br>
+                <input type="date" style="background-color:transparent;">
+                <br>
+                <br>
+                <p>Provincia</p>
+                <select name="Lenguajes" id="provincia" style="background-color:transparent;">
+                    <option value="">Buenos Aires</option>
+                    <option value="">Catamarca</option>
+                    <option value="">Chaco</option>
+                    <option value="">Chubut</option>
+                    <option value="">Córdoba</option>
+                    <option value="">Corrientes</option>
+                    <option value="">Entre Rios</option>
+                    <option value="">Formosa</option>
+                    <option value="">Jujuy</option>
+                    <option value="">La Pampa</option>
+                    <option value="">La Rioja</option>
+                    <option value="">Mendoza</option>
+                    <option value="">Misiones</option>
+                    <option value="">Neuquén</option>
+                    <option value="">Rio Negro</option>
+                    <option value="">Salta</option>
+                    <option value="">San Juan</option>
+                    <option value="">San Luis</option>
+                    <option value="">Santa Cruz</option>
+                    <option value="">Santa Fe</option>
+                    <option value="">Santiago del Estero</option>
+                    <option value="">Tierra del Fuego</option>
+                    <option value="">Tucumán</option>
+                </select>
+                <br>
+                <br>
+                <label for="correo">correo</label>
+                <br>
+                <input type="mail" name="correo" style="background-color:transparent;"
+                    placeholder="escribe tu mail"><br>
+                <br>
+                <label for="">telefono</label>
+                <br>
+                <input type="number" style="background-color:transparent;" placeholder="escribe tu telefono"><br>
+                <br>
+                <p>¿Cuál es tu consulta?</p>
+                <textarea type="comentario" style="background-color:transparent;" name="comentario" id="comentario"
+                    cols="30" rows="5">¿Cuál es tu consulta?</textarea>
+                <br>
+                <br>
+                <section>
+                    <input type="checkbox">
+                    <label class="acepta" for="">acepta los terminos y condiciones</label>
+                </section>
+                <br>
+                <br>
+                <input class="enviar1" style="background-color:transparent;" type="submit" value="Enviar">
+                <input style="background-color:transparent;" type="reset" value="Borrar">
+                <br>
+            </div>
+        </form>
+    </section>
+    </div>
+    <div class="contacto">
+        <footer>
+            <h4>Contactate con nosotros mediante</h4>
+            <a class="face" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a class="face" href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a class="face" href="https://www.instagram.com/?hl=es" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <p>Todos los derechos reservados por Copyright</p>
+        </footer>
+    </div>
+
+    <!-- fin formulario -->
+
+
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
